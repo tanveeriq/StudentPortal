@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umar Academy - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div class="login-header">
+                <i class="fas fa-graduation-cap"></i>
+                <h1 class="theme-title">Umar Academy</h1>
+                <p>Welcome back! Please login to your account.</p>
+            </div>
+            
+            <form id="loginForm" class="login-form" onsubmit="event.preventDefault(); window.location.href='admin-dashboard.html';">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <select id="role" name="role" required>
+                        <option value="">Select Role</option>
+                        <option value="admin">Admin</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="student">Student</option>
+                    </select>
+                </div>
+                <button type="submit" class="login-btn">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Login
+                </button>
+            </form>
+            
+            <div class="demo-credentials">
+                <h3>Demo Credentials:</h3>
+                <div class="credential-item">
+                    <strong>Admin:</strong> admin/admin123
+                </div>
+                <div class="credential-item">
+                    <strong>Teacher:</strong> teacher/teacher123
+                </div>
+                <div class="credential-item">
+                    <strong>Student:</strong> student/student123
+                </div>
+            </div>
+            
+            <div class="quick-access">
+                <h3>Quick Access:</h3>
+                <div class="access-buttons">
+                    <a href="admin-dashboard.html" class="access-btn admin">
+                        <i class="fas fa-user-shield"></i>
+                        Admin Dashboard
+                    </a>
+                    <a href="teacher-dashboard.html" class="access-btn teacher">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        Teacher Dashboard
+                    </a>
+                    <a href="student-dashboard.html" class="access-btn student">
+                        <i class="fas fa-user-graduate"></i>
+                        Student Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    </script>
+</body>
+</html> 
